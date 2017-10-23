@@ -1,0 +1,31 @@
+<template id="pony-tpl">
+    <style>
+        h1 {
+            color: orange;
+        }
+    </style>
+
+    <h1>General Soda</h1>
+</template>
+
+<script>
+    var PonyComponentProto = Object.create(HTMLElement.prototype);
+    // new element
+    var PonyComponent = document.registerElement('ns-pony');
+    // insert in current body
+    document.body.appendChild(new PonyComponent());
+
+    // add some template in the Shadow DOM
+    PonyComponentProto.createdCallback = function () {
+        var oImport = document.querySelector('link[rel="import"]').import;
+        //console.log(x.querySelector("template"))
+        consttemplate = oImport.querySelector("template");
+        letclone = document.importNode(template.content, true);
+        letshadow = this.createShadowRoot();
+        this.createShadowRoot().appendChild(clone);
+    };
+    // new element
+    letPonyComponent = document.registerElement('ns-pony', { prototype: PonyComponentProto });
+    // insert in current body
+    document.body.appendChild(newPonyComponent());
+</script>
