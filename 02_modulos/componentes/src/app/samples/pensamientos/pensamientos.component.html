@@ -1,0 +1,15 @@
+<div>
+  <h2>Pensamientos</h2>
+  <form>
+    <p>
+      <label for="idea">Dime tu idea </label>
+      <input type="text" id="idea" name="idea" [(ngModel)]="sidea">
+    </p>
+
+    <button (click)='addIdeas()'> Añadir </button>
+  </form>
+  <h4 *ngIf="aideas.length">Lista de ideas</h4>
+  <ul>
+    <li *ngFor="let idea of aideas let i = index">{{i+1}} - {{idea}} </li>
+  </ul>
+</div>
