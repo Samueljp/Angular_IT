@@ -12,5 +12,8 @@ export class BindingComponent implements OnInit {
   ngOnInit() {
     this.nombre = 'Pepe';
   }
+  btnBorrar() {
+    this.nombre = '';
+  }
 
 }

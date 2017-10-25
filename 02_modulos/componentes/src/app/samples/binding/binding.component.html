@@ -2,7 +2,7 @@
   <form>
     <label for="nombre">Dime tu nombre </label>
     <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre">
-    <button (click)=[(nombre)]> Borrar </button>
+    <button (click)='btnBorrar()'> Borrar </button>
   </form>
   <p>Hola {{nombre}}</p>
 </div>
