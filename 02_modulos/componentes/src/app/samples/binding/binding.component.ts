@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BindingComponent implements OnInit {
   nombre: string;
+  edad: number;
   constructor() { }
 
   ngOnInit() {
     this.nombre = 'Pepe';
+    this.edad = 25;
   }
   btnBorrar() {
     this.nombre = '';

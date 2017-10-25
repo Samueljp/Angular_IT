@@ -1,8 +1,14 @@
 <div>
   <form>
-    <label for="nombre">Dime tu nombre </label>
-    <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre">
+    <p>
+      <label for="nombre">Dime tu nombre </label>
+      <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre">
+    </p>
+    <p>
+      <label for="edad">Dime tu edad </label>
+      <input type="number" id="edad" name="edad" [(ngModel)]="edad">
+    </p>
     <button (click)='btnBorrar()'> Borrar </button>
   </form>
-  <p>Hola {{nombre}}</p>
+  <p>Hola {{edad < 20 ? "chico" : "señor"}} {{ nombre.toUpperCase() }} ¿tienes {{edad +10}}?</p>
 </div>
