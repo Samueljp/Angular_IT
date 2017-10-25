@@ -4,8 +4,6 @@ import { Component, OnInit } from '@angular/core';
     selector: 'app-pie',
     templateUrl: 'pie.component.html',
     styles: [`footer{
-        position: fixed;
-        bottom: 0;
         width: 100%;
         border-top: 1pxpapayawhip solid;
         padding: 1em;

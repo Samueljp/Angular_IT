@@ -8,7 +8,7 @@ import { PieComponent } from './pie/pie.component';
   imports: [
     CommonModule
   ],
-  declarations: [LogoComponent],
+  declarations: [LogoComponent, CabezaComponent, PieComponent],
   exports: [
     CabezaComponent,
     PieComponent,

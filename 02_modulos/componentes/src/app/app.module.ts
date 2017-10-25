@@ -1,5 +1,7 @@
+import { SamplesModule } from './samples/samples.module';
 // ELEMENTOS DE ANGULAR
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 // COMPONENTES
@@ -13,7 +15,7 @@ import { SharedModule } from './shared/shared.module';
     AppComponent
   ],
   imports: [
-    BrowserModule, SharedModule
+    BrowserModule, SharedModule, SamplesModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
