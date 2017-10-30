@@ -1,0 +1,10 @@
+<div class="container">
+  <h2>Componente Hijo</h2>
+  <p>Me llamo {{nombre}}</p>
+  <p>
+    <button (click)="btnBorrar()">No me gusta {{nombre}}</button>
+  </p>
+  <p>Me quiero llamar
+    <input type="text" placeholder="Si me gusta: " [(ngModel)="nombreSelect" ]>
+  </p>
+</div>
