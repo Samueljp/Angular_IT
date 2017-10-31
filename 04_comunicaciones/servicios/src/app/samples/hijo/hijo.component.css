@@ -1,0 +1,8 @@
+div.container{
+    border-width: 5px;
+    border-color: red;
+    background: purple;
+    align-content: center;
+    margin: 7px;
+    padding: 7px;
+}

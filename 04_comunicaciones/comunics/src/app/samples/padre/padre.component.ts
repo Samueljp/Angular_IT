@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PadreComponent implements OnInit {
   public sName: string;
+  public clave: string;
   constructor() { }
 
   ngOnInit() {
+    this.clave = '';
   }
   respuestaEvento() {
     this.sName = '';
   }
-
 }

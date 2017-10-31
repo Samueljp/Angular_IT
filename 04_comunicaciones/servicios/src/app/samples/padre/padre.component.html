@@ -1,0 +1,14 @@
+<div>
+  <h1>Servicio de libros</h1>
+  <p>
+    <label for="clave">Escribe un clave</label>
+    <input type="text" id="clave" [(ngModel)]="clave">
+    <button (click)="buscarLibro()">Buscar libro</button>
+  </p>
+</div>
+<div class="container">
+  <h2>Componente padre</h2>
+  <input type="text" placeholder="Escribe un nombre" [(ngModel)]="sName">
+  <app-hijo [nombre]="sName" (envenBorrar)="respuestaEvento() "></app-hijo>
+  <p>El hijo se llaman {{sName}}</p>
+</div>
